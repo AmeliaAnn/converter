@@ -1,5 +1,6 @@
 package com.converter;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -15,9 +16,9 @@ public class Main {
 
     }
 
-    public static double convertRuToUsd(int sumr, double course) {
-
+    public static String convertRuToUsd(int sumr, double course) {
+        DecimalFormat df = new DecimalFormat("###.##");
         double dollar = sumr / course;
-        return dollar;
+        return df.format(dollar);
     }
 }
