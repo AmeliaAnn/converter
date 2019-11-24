@@ -17,7 +17,7 @@ public class Main {
 
     public static double convertRuToUsd(int sumr, double course) {
 
-        double dollar = sumr * course;
+        double dollar = sumr / course;
         return dollar;
     }
 }
